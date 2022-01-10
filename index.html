@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student data</title>
+    <script src="data.js"></script>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;
+         font-family:'josefin sans',sans-serif ;
+         
+
+        }
+        main{
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div{
+            max-width: 500px; height:auto;
+            background-color:#00cec9 ;
+            padding: 50px;
+            box-shadow: 1px 1px 15px 3px #2d3436;
+        }
+        h1{
+            margin-bottom: 10px;
+            text-shadow: 1px 2px 1px white;
+            text-transform: capitalize;
+
+        }
+
+        label{
+            display:block;
+            text-transform: capitalize;
+            margin-top: 30px;
+        }
+        input{
+            width:400px;
+            padding: 10px 0;
+        }
+
+        button{
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            color:white;
+            background-color: #00b894;
+            box-shadow: 1px 1px 5px 1px #2d3436;
+            margin-top:20px;
+
+        }
+    </style>
+</head>
+<body>
+  <main>
+    <h1>Tip calculator</h1>
+      <div>
+          
+          <label for="">Bill Amount</label>
+          <input type="text" name="" id ="bill_amount">
+          <br>
+          <label for="">Tip Percentage</label>
+          <input type="text" name="" id ="tip_per">
+          <br>
+          <label for="">Tip amount</label>
+          <input type="text" name="" id ="tip_total" disabled>
+          <br>
+          <label for="">Total billed</label>
+          <input type="text" name="" id ="total_billed" disabled>
+          <br>
+
+          <button onclick="tipcalcy()">calculate</button>
+      </div>
+  </main>
+</body>
+</html>
